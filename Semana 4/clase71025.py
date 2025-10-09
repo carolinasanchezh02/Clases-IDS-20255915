@@ -1,4 +1,4 @@
-nombre = "Alvin"
+nombre = "Carolina"
 palabra = "reconocer"
 otra_palabra = "palabra"
 
