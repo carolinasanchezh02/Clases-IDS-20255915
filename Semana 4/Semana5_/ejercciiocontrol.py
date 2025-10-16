@@ -38,7 +38,7 @@ alumnito = int(input("Ingrese el orden de niño que desea saber (1-7):"))
 print(f"El alumno que ingreso como numero {alumnito} es {alumnos[alumnito-1]}")"""
 
 ##5
-"""nombre = input("Ingrese su primer nombre: ")
+nombre = input("Ingrese su primer nombre: ")
 apellido = input("Ingrese su apellido: ")
 dominio = "@isnd.com"
 
@@ -48,7 +48,7 @@ propuesta2 = nombre[0].lower() + apellido.lower() + dominio
 print(propuesta1)
 print(propuesta2)
 #probar hacer con fstring
-"""
+
 
 ###6
 """monto = input("Ingrese su monto: ") #in para ver si esta o no esta
@@ -57,7 +57,7 @@ print(monto[0] == "$")
 print(monto.count("$")==1)  #que me cuente que sea solo 1"""
 
 ###7
-"""2 letras aleatorias"""
+"""2 letras aleatorias
 letra1 = input("Ingrese su letra 1:")
-letra2 = input("Ingrese su letra 2:")
+letra2 = input("Ingrese su letra 2:")"""
 
