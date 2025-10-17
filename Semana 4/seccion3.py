@@ -27,11 +27,11 @@ print(not Bool) #lo contrario de true
 
 num1 = int(input("Ingrese su primernúmero: "))
 num2 = int(input("Ingrese su segundo npumero: "))
-print(num1 >= num2)"""
+print(num1 >= num2)
 
 votar = 18
 edad = int(input("Ingrese su edad: "))
-print(edad >= votar)
+print(edad >= votar)"""
 
 
 
