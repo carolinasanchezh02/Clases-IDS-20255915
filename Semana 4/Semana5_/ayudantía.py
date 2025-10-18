@@ -21,12 +21,10 @@ print(cadena.lower().count("z")) #en caso de que en la cadena hayan mayusculas y
 x = int(input())
 A = input()
 B = input()
-parte1 = A[:x]
-parte2 = B[-x:] #-x para denotar que empiece desde el final
 
-"""Tengo a lapiz como mi valor de variable
- entonces si quiero que me de los primeros tres caracteres pero al revez, osea pal, 
- es variable[:3:][::-1] <- primero me discrima que aagarra desde el inicio hasta el caracter con poiscion 3
- y despues me los da al reves"""
+parte1 = int(len(A)/x)
+parte2 = int(len(B)/x) #-x para denotar que empiece desde el final
 
-print(parte1+parte2)
+
+print(A[:parte1] + B[-parte2:])
+
