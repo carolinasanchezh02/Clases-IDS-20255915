@@ -39,10 +39,28 @@ condi1 = len(N[1])
 ### 8 en este no se q caso estoy omitiendo pero me da RTE
 x = int(input())
 y = int(input())
+print(max(x, y))
+
+mi solución: 
 if x>y: 
     print(x)
 elif x== y: 
     print(x)
 else: 
-    print(y)"""
+    print(y)
+    
+segun gepete: 
+x, y = map(int, input().split())
+
+if x > y:
+    print(x)
+else:
+    print(y)
+
+##9
+estado = input()
+if estado == "conectado":
+    print("Ola Ivan")
+else: 
+    print("Ol...")"""
     
