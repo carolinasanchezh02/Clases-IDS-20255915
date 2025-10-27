@@ -29,15 +29,21 @@ promedio = (c1 + c2 + c3 + c4 + c5 + c6)/6
 if promedio > 9.5: 
     print("Gana Premio :)")
 else: 
-    print("No Gana Premio :(")
+    print("No Gana Premio :(")"""
+    
+    
+###4  LO TENGO MALO NO SEEEEE-> RTE
+"""N = int(input())
+for i in range(N):
+    numero = int(input())
+    if numero == 7: 
+        conteo_n1 += 1
+    elif numero == 5: 
+        conteo_n2 += 2
+print (conteo_n1, conteo_n2)"""
 
-## 6 me quede aca, lol
-N = []
-N.append(input())
-condi1 = len(N[1])
-
-### 8 en este no se q caso estoy omitiendo pero me da RTE
-x = int(input())
+###8 en este no se q caso estoy omitiendo pero me da RTE
+"""x = int(input())
 y = int(input())
 print(max(x, y))
 
@@ -51,7 +57,6 @@ else:
     
 segun gepete: 
 x, y = map(int, input().split())
-
 if x > y:
     print(x)
 else:
@@ -62,5 +67,24 @@ estado = input()
 if estado == "conectado":
     print("Ola Ivan")
 else: 
-    print("Ol...")"""
+    print("Ol...")
+    
+##8 
+A = int(input())
+ingresos = 0
+for i in range(A):
+    edades = int(input())
+    if edades >= 15:
+        ingresos += 1
+print(ingresos)""" 
+
+###10
+N = int(input())
+for i in range(N):
+    P = int(input())
+    if P >= 3:
+        print("Ok")
+    else:
+        print("No")       
+        
     
