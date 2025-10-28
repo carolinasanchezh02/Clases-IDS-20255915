@@ -34,15 +34,46 @@ else:
     
 ###4  LO TENGO MALO NO SEEEEE-> RTE
 """N = int(input())
+conteo_n1 = 0
+conteo_n2 = 0
 for i in range(N):
     numero = int(input())
     if numero == 7: 
         conteo_n1 += 1
     elif numero == 5: 
-        conteo_n2 += 2
-print (conteo_n1, conteo_n2)"""
+        conteo_n2 += 1
+print (conteo_n1, conteo_n2)
 
-###8 en este no se q caso estoy omitiendo pero me da RTE
+###5
+N = int(input())
+Pa, Pb, Pc = map(int, input().split())
+
+for i in range(N): 
+    combo = input().upper()
+    comboA= combo.count("A")*Pa
+    comboB = combo.count("B")*Pb
+    comboC = combo.count("C")*Pc  
+    print(comboA+comboB+comboC)
+    
+###7
+N = int(input())
+lista = []
+for i in range(N):
+    nombres = input().lower()
+    lista.append(nombres)
+
+for nombre in lista:
+    cantL = len(nombre)
+    if cantL <= 6: 
+        print("No vale la pena")
+    elif cantL >= 8: 
+        print("Si aguanto otro desarrollo de personaje")
+    else: 
+        print("Dios no creo aguantar esta vez")"""    
+    
+    
+
+###8 
 """x = int(input())
 y = int(input())
 print(max(x, y))
@@ -76,7 +107,7 @@ for i in range(A):
     edades = int(input())
     if edades >= 15:
         ingresos += 1
-print(ingresos)""" 
+print(ingresos)
 
 ###10
 N = int(input())
@@ -85,6 +116,6 @@ for i in range(N):
     if P >= 3:
         print("Ok")
     else:
-        print("No")       
+        print("No")"""        
         
     
