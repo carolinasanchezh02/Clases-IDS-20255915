@@ -1,7 +1,7 @@
 # Vamos a crear un diccionario
 """mi_gato= {"Pelusa", 3, "simpatica"} #[Nombre, edad, caracteristica]
 print(len(mi_gato))
-print(type(mi_gato)) #Da "set" porque no hay valores definidos."""
+print(type(mi_gato)) #Da "set" porque no hay valores definidos.
 
 
 #SET
@@ -22,7 +22,7 @@ pame_cat= {
 }
 
 copia = mi_gato== pame_cat
-print(copia)
+print(copia)"""
 
 birthdays= {"Alice" : "Apr 1",
             "Bob": "Dec 12",
@@ -37,14 +37,16 @@ print(birthdays)
 for persona, fecha in birthdays.items():
     print(f"El cumpleaños de {persona} es en {fecha}")
     
-semana= {}
+"""semana= {}
 semana["uno"] = "lunes"
 semana["dos"] = "martes"
 semana["tres"] = "miercoles"
 semana["cuatro"] = "jueves"
 semana["cinco"] = "viernes"
-print(semana)
+print(semana)"""
 
-for k,v in semana.items():#.values es un metodo para referirnos a los valores que tiene una "variable"  (*clave: VALOR(value))
-    """print (k)"""
-    print (f"El día {k} de la semana es {v}")
+"""for k,v in semana.items():#.values es un metodo para referirnos a los valores que tiene una "variable"  (*clave: VALOR(value))
+    '"""'print (k)'"""
+    print (f"El día {k} de la semana es {v})"""
+    
+    
