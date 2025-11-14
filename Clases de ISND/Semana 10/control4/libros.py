@@ -2,6 +2,7 @@ print("Vamos a registrar un libro: ")
 
 #para ingresar libros y sus datos
 def registrar_libro(lista_libros):
+    """Para registrar los datos de un libro"""
     Libro = {}
     numero = len(lista_libros) + 1
     if numero < 10:
@@ -16,9 +17,11 @@ def registrar_libro(lista_libros):
     Libro["Disponible"] = True
 
     lista_libros.append(Libro)
+    print(f"El codigo de su libro es {Libro["Código"]}")
 
 
 #para mostrar los libros
 def mostrar_libros(lista_libros):
-    for libro in lista_libros:
-        print(libro)
+    """Para mostrar los libros registrados"""
+    for buk in lista_libros:
+        print(buk)
