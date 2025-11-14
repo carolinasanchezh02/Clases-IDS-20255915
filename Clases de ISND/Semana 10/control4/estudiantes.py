@@ -1,0 +1,6 @@
+estudiantes = [
+    {
+        "carnet": "",
+        "nombre": ""
+    }
+]
