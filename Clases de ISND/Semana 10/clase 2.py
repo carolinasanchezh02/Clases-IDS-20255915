@@ -11,7 +11,7 @@ usuarios = ["Fer", "MOI", "LuIs"]
 def ordenar_pizza(size, *ingrediente): #ahora va recibir varios ingredientes como si fuera uan lista, le estoy indicando que trate ese parametro como una lista. 
     #Normalmente los parametros tipo args denben dejarse al final
     """"Vamos a imprimir la orden"""
-    print(f"Usted ha ordenado una pizza {size.capitalice()} de: ")
+    print(f"Usted ha ordenado una pizza {size} de: ")
     for i in ingrediente: 
         print(f"""- {i}""")
 ordenar_pizza("gRANDE", "queso", "tocino", "chile", "piña")        
