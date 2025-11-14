@@ -1,5 +1,3 @@
-print("Vamos a registrar un libro: ")
-
 #para ingresar libros y sus datos
 def registrar_libro(lista_libros):
     """Para registrar los datos de un libro"""
@@ -17,7 +15,7 @@ def registrar_libro(lista_libros):
     Libro["Disponible"] = True
 
     lista_libros.append(Libro)
-    print(f"El codigo de su libro es {Libro["Código"]}")
+    print(f"El codigo de su libro es {Libro["Codigo"]}")
 
 
 #para mostrar los libros

@@ -1,4 +1,3 @@
-print("Vamos a registrar un estudiante: ")
 #Para que puesa regsitrar estudiantes
 def registrar_estudiante(lista_estudiantes):
     """Para registrar los datos del estudiante"""
