@@ -8,7 +8,7 @@
 #Como le hago para llamar una funcion desde otro modulo
 import modulo as fn
 #import datos as dt
-from datos import usuarios3 as u3 
+from datos import usuarios3 as u3 #para que de todo ese modulo solo me agarre esa lista en especifico
 
 fn.registro_profesores(
                 "Chema", 
