@@ -1,23 +1,31 @@
 libros = []
-registrar_libro = True
-contador = 1
+contador = 0
 
-while registrar_libro:
-    opción = input("""Elija la opción:  (1: Registrar libro, 2: Registrar estudiante, 3: Registrar préstamo, 
-                   4: Mosntrar libros, 5: Mostrar estudiantes, 6: Mostrar prestamos, 7: Salir) 
-                   """)
-    
-    
-    if opción == "1":
-        codigo = f"L00{contador}"
-        contador += 1
+"""if contador < 10:
+    codigo = "L00" + str(contador)
+elif contador < 100:
+    codigo = "L0" + str(contador)
+else:
+    codigo = "L" + str(contador)"""
+
+def registrar_libro():
+    r_libro = True
+    print("Vamos a registrar un libro: ")
+    while r_libro:
+        if len(libros) < 10:
+            contador += 1
+            codigo = "L00" + str(contador)
+        elif len(libros) < 100:
+            codigo = "L0" + str(contador)
+        else:
+            codigo = "L" + str(contador)
         print("Vamos a registrar un libro: ")
         Libro= {}
         Libro["Nombre"]= input("Ingrese el nombre del libro: ")
         Libro["Autor"]= input("Ingrese el autor del libro: ")
-        Libro["Código"] = codigo 
+        Libro["Codigo"] = codigo
         Libro["Disponible"]= True
         libros.append(Libro)
         print(libros)
-        
+        break
     
