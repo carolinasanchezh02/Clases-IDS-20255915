@@ -5,7 +5,7 @@ from estudiantes import registrar_estudiante, mostrar_estudiantes
 def buscar_estudiante(lista_estudiantes, carnet):
     """Para buscar y verificar la existencia del carnet del estudiante"""
     for estudiante in lista_estudiantes:
-        if estudiante["Código"] == carnet:
+        if estudiante["carnet"] == carnet:
             return estudiante
     return None
 

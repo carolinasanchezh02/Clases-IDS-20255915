@@ -38,7 +38,7 @@ def menu():
             print("Vamos a mostrar los prestamos: ")
             mostrar_prestamos(lista_prestamos)
         elif opcion == "7":
-            print("Saliendo del programa...")
+            print("Saliendo del programa")
             break
         else:
             print("Opción inválida.")
