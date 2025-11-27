@@ -10,19 +10,18 @@ while ejecución:
     else: 
         print("La opción elegida no es valida. ")
         
-print("Grcias por utilizar nuestro sistema") 
+print("Grcias por utilizar nuestro sistema")
 
 
 
 ###2 Un sistema de registro  -< con for - cuando se cuanto es el maximo
-alumnos = 0
 lista_alumno = []
 cantidad = int(input("¿Cuántos alumnos voy a ingresar?"))
 for i in range(cantidad): 
     alumno = input("Digite el nombre del alumno: ")
     lista_alumno.append(alumno)
-print (lista_alumno)"""
-
+print (lista_alumno)
+""" 
 ###3 con while
 alumnos = 0
 lista_alumno = []
