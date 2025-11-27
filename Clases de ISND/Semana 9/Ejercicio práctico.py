@@ -32,6 +32,7 @@ while cafeMenu:
         Producto["Precio"]= float(input())
         base_d_productos.append(Producto)
         print(base_d_productos)
+        print(Producto.items())
         
     elif opción == "3":
         print("Vamos a registrar un nuevo cliente :D :")
@@ -45,6 +46,10 @@ while cafeMenu:
     
     elif opción == "4": 
         print("Vamos a mostrar a los clientes")
+    elif opción == '8':
+        cafeMenu = False 
+print ("Usted ha salido del menú")
+    
         
 
     
