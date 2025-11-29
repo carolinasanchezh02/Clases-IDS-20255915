@@ -1,4 +1,4 @@
-from modulo_datos import lista_estudiantes, lista_inscripciones, Cursos_Disponibles
+from modulo_datos import lista_estudiantes, lista_inscripciones, cursos_disponibles
 from modulo_funciones import registrar_estudiante, inscribir_en_curso, generar_reporte
 
 
@@ -12,11 +12,11 @@ while menu:
 4. Salir
 """)
     if opcion == '1': 
-        registrar_estudiante(lista_estudiantes)
+        registrar_estudiante()
     elif opcion == "2":
-        inscribir_en_curso(lista_estudiantes, Cursos_Disponibles, lista_inscripciones)
+        inscribir_en_curso()
     elif opcion == "3":
-        generar_reporte(lista_inscripciones, lista_estudiantes)
+        generar_reporte()
     elif opcion == '4':
         menu = False
     else:

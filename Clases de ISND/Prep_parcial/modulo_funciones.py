@@ -1,9 +1,7 @@
-from modulo_datos import Cursos_Disponibles
-from modulo_datos import lista_estudiantes
-from modulo_datos import lista_inscripciones
+import modulo_datos as md
 
 
-def registrar_estudiante(lista_estudiantes):
+def registrar_estudiante():
     estudiante = {}
 
     carnet = input("Ingrese su carnet: ")
@@ -26,11 +24,11 @@ def registrar_estudiante(lista_estudiantes):
     estudiante["Nombre"] = nombre.capitalize()
     estudiante["Apellido"] = apellido.capitalize()
 
-    lista_estudiantes.append(estudiante)
+    md.lista_estudiantes.append(estudiante)
     print("Estudiante registrado con éxito.")
   
   
-def inscribir_en_curso(lista_estudiantes, Cursos_Disponibles, lista_inscripciones):
+def inscribir_en_curso():
     while True:
         op = input("\n 'inscribir' para inscribir / 'salir' para regresar: ").lower()
 
@@ -40,7 +38,7 @@ def inscribir_en_curso(lista_estudiantes, Cursos_Disponibles, lista_inscripcione
         elif op == 'inscribir':
             solicitud_carnet = input("Ingrese su carnet: ")
             existe = False
-            for est in lista_estudiantes:
+            for est in md.lista_estudiantes:
                 if est["Carnet"] == solicitud_carnet:
                     existe = True
                     break
@@ -51,17 +49,17 @@ def inscribir_en_curso(lista_estudiantes, Cursos_Disponibles, lista_inscripcione
 
             #Mostrar cursos disponibles
             print("\nCursos disponibles:")
-            for c in Cursos_Disponibles:
+            for c in md.cursos_disponibles:
                 print(f"- {c}")
             while True:
                 codigo = input("Ingrese el código del curso: ").upper()
-                if codigo not in Cursos_Disponibles:
+                if codigo not in md.cursos_disponibles:
                     print("Ese curso no existe. Ingrese uno válido.")
                     continue
                 break
             
             ya_inscrito = False
-            for ins in lista_inscripciones:
+            for ins in md.lista_inscripciones:
                 if ins[0] == solicitud_carnet and ins[1] == codigo:
                     ya_inscrito = True
                     break
@@ -69,15 +67,15 @@ def inscribir_en_curso(lista_estudiantes, Cursos_Disponibles, lista_inscripcione
                 print("Ya estás inscrito en este curso.")
                 continue
             inscripcion = (solicitud_carnet, codigo)
-            lista_inscripciones.append(inscripcion)
+            md.lista_inscripciones.append(inscripcion)
             print("Inscripción realizada con éxito.")
         else:
             print("Opción no válida, intente nuevamente.")
             
         
             
-def generar_reporte(lista_inscripciones, lista_estudiantes):
-    if len(lista_inscripciones) == 0: 
+def generar_reporte():
+    if len(md.lista_inscripciones) == 0: 
         print("No hay inscripciones hechas")
         return
     
@@ -96,17 +94,17 @@ def generar_reporte(lista_inscripciones, lista_estudiantes):
           3. BD
           4. SE
           5. SIN (Estudiantes sin inscripción) """)
-    selección = input("Seleccione una de las opciones (1-5): ")
+    selección = input("Seleccione una de las opciones (1-5): ").upper()
     
 
     if Opciones[selección] == "SIN":
         carnets_inscritos = []
-        for ins in lista_inscripciones:
+        for ins in md.lista_inscripciones:
             if ins[0] not in carnets_inscritos:
                 carnets_inscritos.append(ins[0])
         print("\nEstudiantes sin inscripción:")
         encontrado = False
-        for est in lista_estudiantes:
+        for est in md.lista_estudiantes:
             if est["Carnet"] not in carnets_inscritos:
                 print(f"- {est['Nombre']} {est['Apellido']} (Carnet: {est['Carnet']})")
                 encontrado = True
@@ -114,10 +112,10 @@ def generar_reporte(lista_inscripciones, lista_estudiantes):
             print("Todos los estudiantes tienen al menos una inscripción.")
         return
     codigo_curso = Opciones[selección]
-    print(f"""Carnets inscritos en el curso {codigo_curso} - {Cursos_Disponibles.get(codigo_curso, '')}:""")
+    print(f"""Carnets inscritos en el curso {codigo_curso} - {md.cursos_disponibles.get(codigo_curso, '')}:""")
 
     encontrados = []
-    for ins in lista_inscripciones:
+    for ins in md.lista_inscripciones:
         if ins[1] == codigo_curso:
             encontrados.append(ins[0])
 

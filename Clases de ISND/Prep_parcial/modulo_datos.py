@@ -1,7 +1,7 @@
 import modulo_funciones
 
 lista_estudiantes = []
-Cursos_Disponibles = {
+cursos_disponibles = {
     "PY" : "Python Básico",
     "JS" : "JavaScript para Principiantes",
     "BD" : "BD	Introducción a Bases de Datos",
