@@ -29,8 +29,7 @@ def registrar_estudiante():
     lista_estudiantes.append(estudiante)
     print("Estudiante registrado con éxito.")
   
-
-
+  
 def inscribir_en_curso():
     while True:
         op = input("\n 'inscribir' para inscribir / 'salir' para regresar: ").lower()
@@ -74,6 +73,8 @@ def inscribir_en_curso():
             print("Inscripción realizada con éxito.")
         else:
             print("Opción no válida, intente nuevamente.")
+            
+        
             
 def generar_reporte():
     pass
