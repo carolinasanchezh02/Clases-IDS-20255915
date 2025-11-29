@@ -1,8 +1,6 @@
 import modulo_funciones
 
-
 lista_estudiantes = []
-
 Cursos_Disponibles = {
     "PY" : "Python Básico",
     "JS" : "JavaScript para Principiantes",
